@@ -1,0 +1,43 @@
+.gold-text {
+    /* font-size: 3rem;  */
+    font-weight: 700;
+  bottom: 230px;
+  background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+    overflow-x: hidden;
+  }
+  
+  
+.share-button {
+    position: fixed; /* Fix the share button to the screen */
+    right: 20px; /* Set the right margin */
+    top: 50%; /* Set the top margin to the middle of the screen */
+    transform: translateY(-50%); /* Center the button vertically */
+    z-index: 999; /* Set a high z-index to make sure the button is always on top */
+  }
+  
+  .share-icon {
+    display: inline-block; 
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    background-color: #333; /* Set the background color */
+    color: #fff; /* Set the text color */
+    text-align: center; /* Center the icon */
+    border-radius: 50%; /* Round the corners */
+    cursor: pointer; /* Change the cursor to a pointer when hovering */
+    transition: background-color 0.2s; /* Add a transition effect to the background color */
+  }
+  
+  .share-icon:hover {
+    background-color: #ffc107; /* Change the background color on hover */
+  }
+  
+  .share-icon i {
+    line-height: 40px; /* Center the icon vertically */
+    font-size: 20px; /* Set the icon size */
+  }
+  
