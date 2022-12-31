@@ -11,7 +11,7 @@ import {Helmet} from "react-helmet";
 function App() {
   let { name } = useParams();
   const [scrollPosition, setScrollPosition] = useState(0);
-  let [names, setNames] = useState(name === undefined || "" ? "World" : name);
+  let [names, setNames] = useState(name === undefined || "" ? "World" : (localStorage.getItem("name") === null ? name : localStorage.getItem("name")));
 
   // Use the useEffect hook to add an event listener to the scroll event
   useEffect(() => {
