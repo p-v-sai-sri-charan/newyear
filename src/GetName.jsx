@@ -10,7 +10,7 @@ function GetName() {
     e.preventDefault();
 
     localStorage.setItem("name", name.toLocaleUpperCase());
-    navigate(`${window.location.host}/${localStorage.getItem("name")}`);
+    navigate(`/${localStorage.getItem("name")}`);
   };
   return (
     <div className="w-screen h-auto">
